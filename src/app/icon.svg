@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Printer Help Hub">
+  <rect width="32" height="32" rx="7" fill="#1c6e77"/>
+  <rect x="9" y="5.5" width="14" height="10" rx="1.6" fill="#ffffff"/>
+  <line x1="11.5" y1="9" x2="20.5" y2="9" stroke="#f2a83a" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="11.5" y1="12" x2="18" y2="12" stroke="#bcd7da" stroke-width="1.6" stroke-linecap="round"/>
+  <rect x="6.5" y="14" width="19" height="11" rx="2.4" fill="#ffffff"/>
+  <rect x="10" y="19.5" width="12" height="5" rx="1.2" fill="#1c6e77"/>
+  <circle cx="9.3" cy="17" r="1.15" fill="#f2a83a"/>
+</svg>
