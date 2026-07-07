@@ -47,4 +47,18 @@ JivoChat lazy-load + Ads conversion hook (`lib/analytics.ts`), GA4/Ads behind Co
 - Support phone number → unhides phone CTAs (`siteConfig.phone`).
 - `NEXT_PUBLIC_JIVOCHAT_ID`, `NEXT_PUBLIC_GA4_ID`, `NEXT_PUBLIC_GOOGLE_ADS_ID`, `NEXT_PUBLIC_GOOGLE_ADS_CONVERSION_LABEL`.
 - Owner review of policy wording (recommended, and legal counsel for Terms/arbitration).
-- Nothing is committed to git yet.
+
+## Live deployment (2026-07-07)
+- **Pushed to GitHub:** `vcaresaurabh/printer-help-hub` @ `main`.
+- **Deployed to Hostinger** (SSH, LiteSpeed) → docroot `~/domains/printer-help-hub.com/public_html/`.
+- **Live & verified:** https://printer-help-hub.com — all 18 tested routes 200, valid SSL
+  (verify=0), HTTP→HTTPS 301, gzip on, all security headers + CSP applied, JSON-LD present,
+  sitemap/robots served, helpful 404 page shown.
+- **Two platform items (not code):**
+  1. `www.printer-help-hub.com` SSL SAN not yet issued — Hostinger AutoSSL usually adds www
+     automatically for a new domain; if not, hPanel → SSL → install/reissue (covers www). The
+     `.htaccess` already 301s www→non-www once the cert is valid.
+  2. Unknown URLs return a soft-404 (LiteSpeed redirects to the ErrorDocument, 200) rather than a
+     hard 404 status; the helpful 404 page is still served. `.htaccess` requests a true 404 but
+     LiteSpeed overrides on shared hosting.
+- **Rotate credentials:** SSH password + Hostinger API token were shared in chat — rotate both.
